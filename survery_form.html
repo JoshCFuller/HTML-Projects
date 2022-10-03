@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles-sf.css">
+    </head>
+  <body>
+    <h1 id="title">Video Game Survery</h1>
+    <p id="description">Please let us know about your video game habits.</p>
+
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label" for:"name">Please Enter your Name: <input id="name" type="text" placeholder="John Smith" required/></label>
+      <label id="email-label" for:"email">Please Enter your Email: <input id="email" type="email" placeholder="jsmith@email.com" required /></label>
+      <label id="number-label" for="number">Please enter your age: <input id="number" type="number" min="18" max="99" placeholder="age" /></label>
+      </fieldset>
+
+      <fieldset>
+        <label>Do you like to play video Games?
+        <select id="dropdown">
+          <option>Yes</option>
+          <option>No</option>
+          </select>
+          </label>
+          </fieldset>
+
+          <fieldset>
+        <h2>How long do I play per week?</h2>
+        <label><input type="radio" name="play" class="inline" value="1"></input> 1-2 Days<label/>
+        <label><input type="radio" name="play" class="inline" value="2"></input> 3-5 days<label/>
+        <label><input type="radio" name="play" class="inline" value="3"></input> 6-7 days<label/>
+        <label><input type="radio" name="play" class="inline" value="4"></input> N/A<label/>
+          </fieldset>
+
+          <fieldset>
+            <h2>What kind of games?</h2>
+            <label><input type="checkbox" value="5" class="inline"/> Sports</label>
+            <label><input type="checkbox" value="6" class="inline"/> RPGs</label>
+            <label><input type="checkbox" value="7" class="inline"/> Action</label>
+            <label><input type="checkbox" value="8" class="inline"/> Other</label>
+            <label><input type="checkbox" value="9" class="inline"/> N/A</label>
+            </fieldset>
+
+            <fieldset>
+              <h2>Tell Us More!</h2>
+              <textarea placeholder="My favorite games are....."></textarea>
+              <input type="submit" id="submit"></input>
+              </fieldset>
+        
+      </form>
+    </body>
+  </html>
